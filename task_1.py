@@ -6,7 +6,7 @@ def total_salary(path):
         count = 0
         
         # Відкриваємо файл
-        with open(path, 'r') as file:
+        with open(path, 'r', encoding='utf-8') as file:
             for line in file:
                 # Видаляємо пробіли на початку та в кінці рядка
                 line = line.strip()
